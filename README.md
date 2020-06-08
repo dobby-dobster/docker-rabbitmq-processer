@@ -41,7 +41,7 @@ Random string (RJ0GVCD2X97FPSJATG3N675MRQVF3DWZ) sent
 Sleeping for 5 seconds..
 Random string generated: 08X2BDMAPIC36Y301T6RTOV0RXWJACPA
 Random string (08X2BDMAPIC36Y301T6RTOV0RXWJACPA) sent
-Sleeping for 5 seconds..```
+Sleeping for 5 seconds..
 
 ```bash
 docker logs docker-rabbitmq-processer_consumer_1 | head
@@ -53,4 +53,4 @@ docker logs docker-rabbitmq-processer_consumer_1 | head
 [x] Received b'CLT0HRW7QY3JNDLO7J3O0M3U8KVXED9X'
 [x] Received b'LPS804O2BD2Q85XXNNDTN4VX5DZ0TX26'
 [x] Received b'65JSFUYADV4CH3T961C2SHN1110ECUSQ'
-[x] Received b'5ZRCCA1N8WG9F65LLZVS6STSKPZR7YY2'```
+[x] Received b'5ZRCCA1N8WG9F65LLZVS6STSKPZR7YY2'
