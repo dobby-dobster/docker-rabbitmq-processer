@@ -13,7 +13,7 @@ git clone https://github.com/dobby-dobster/docker-rabbitmq-processer.git
 cd docker-rabbitmq-processer
 docker-compose up -d
 ```
-2. Validate
+3. Validate
 Three containers should now be running
   docker-rabbitmq-processer_rabbitmq_1
   docker-rabbitmq-processer_producer_1
