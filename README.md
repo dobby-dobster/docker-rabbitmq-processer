@@ -33,7 +33,7 @@ Producer and consumer are based on centos8 image. A more efficent way would be t
 ```bash
 docker logs docker-rabbitmq-processer_producer_1 | head
 ```
-```Random string generated: RBXF9CJPKNBCFTBX6S75U5QQ41HBKMH3
+Random string generated: RBXF9CJPKNBCFTBX6S75U5QQ41HBKMH3
 Random string (RBXF9CJPKNBCFTBX6S75U5QQ41HBKMH3) sent
 Sleeping for 5 seconds..
 Random string generated: RJ0GVCD2X97FPSJATG3N675MRQVF3DWZ
@@ -46,7 +46,7 @@ Sleeping for 5 seconds..
 ```bash
 docker logs docker-rabbitmq-processer_consumer_1 | head
 ```
-```[*] Waiting for messages. To exit press CTRL+C
+[*] Waiting for messages. To exit press CTRL+C
 [x] Received b'NB254LOQOU88BHMTP06S2V47AUQODYB2'
 [x] Received b'VN2EDMC2WU8YILOVDMI5VGGID4EX5UM4'
 [x] Received b'CZ32S1D22QBH7P9ACJCBT7HXRNC5VX6U'
