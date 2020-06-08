@@ -10,6 +10,7 @@ git clone https://github.com/dobby-dobster/docker-rabbitmq-processer.git
 ```
 2. Deploy
 ```bash
+cd docker-rabbitmq-processer
 docker-compose up -d
 ```
 2. Validate
