@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import pika
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbitmq'))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbit'))
 channel = connection.channel()
 
 channel.queue_declare(queue='RandomStrings')

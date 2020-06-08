@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-    rabbitmq:
-        image: 'rabbitmq:latest'
+    rabbit:
+        image: 'rabbitmq:3'
         ports:
         # The standard AMQP protocol port
             - '5672:5672'
@@ -12,7 +12,7 @@ services:
             - network
     producer:
         depends_on:
-            - rabbitmq
+            - rabbit
         build:
             context: .
             dockerfile: Dockerfile
@@ -23,7 +23,7 @@ services:
             - network
     consumer:
         depends_on:
-            - rabbitmq
+            - rabbit
         build:
             context: .
             dockerfile: Dockerfile
