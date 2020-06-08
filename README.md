@@ -27,7 +27,7 @@ docker container ls | grep docker-rabbitmq
 - docker-rabbitmq-processer_producer_1 - producer container, runs send.py which generates a 32 randaom character string and publishes message to queue (RandomStrings). Sleeps for 1 minute before publishing next message.
 docker-rabbitmq-processer_consumer_1 - consumer container, runs fetch.py which consumes messages from the queue (RandomStrings).
 
-Producer and consumer are based on centos8 image. A more efficent way would be to use a python image, however made testing more difficult.
+Producer and consumer are based on centos8 image. A more efficent way would be to use a python image, however that made testing more difficult due to a lack of basic utilties. 
 
 ## Logs
 ```bash
