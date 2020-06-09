@@ -3,10 +3,12 @@ import pika, random, string, time
 from retry import retry
 
 def random_generator(size=32, chars=string.ascii_uppercase + string.digits):
+    """Generate random string."""
     return ''.join(random.choice(chars) for x in range(size))
 
 @retry()
 def send_to_rabbit(random_string):
+    """Connect to rabbit and publish message."""
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbit'))
     channel = connection.channel()
     channel.queue_declare(queue='RandomStrings')
@@ -15,11 +17,12 @@ def send_to_rabbit(random_string):
     connection.close()
 
 def main():
+    """main func."""
     while True:
-      random_string = random_generator()
-      print('Random string generated: {}'.format(random_string))
-      send_to_rabbit(random_string)
-      print('Sleeping for 1 seconds..')
-      time.sleep(1)
+        random_string = random_generator()
+        print('Random string generated: {}'.format(random_string))
+        send_to_rabbit(random_string)
+        print('Sleeping for 1 seconds..')
+        time.sleep(1)
 
 main()

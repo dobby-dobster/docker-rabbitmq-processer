@@ -3,10 +3,12 @@ import pika
 from retry import retry
 
 def callback(ch, method, properties, body):
+    """Retrieve message."""
     print(" [x] Received %r" % body)
 
 @retry()
 def main():
+    """main func."""
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbit'))
     channel = connection.channel()
     channel.queue_declare(queue='RandomStrings')
