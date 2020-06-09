@@ -21,6 +21,9 @@ Three containers should now be running
 ```bash
 docker container ls | grep docker-rabbitmq
 ```
+You can browse to http://0.0.0.0:15672 and login as guest/guest to access the Rabbit management UI.
+
+![logo](Rabbit_Screenshot.png)
 
 ## Containers
 - docker-rabbitmq-processor_rabbitmq_1 - standard rabbitmq container
