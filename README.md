@@ -30,7 +30,7 @@ You can browse to http://0.0.0.0:15672 and login as guest/guest to access the Ra
 - docker-rabbitmq-processor_producer_1 - producer container, runs send.py which generates a 32 randaom character string and publishes message to queue (RandomStrings). Sleeps for 1 secoond before publishing next message.
 docker-rabbitmq-processor_consumer_1 - consumer container, runs fetch.py which consumes messages from the queue (RandomStrings).
 
-Producer and consumer are based on centos8 image. A more efficent way would be to use a python image, however that made testing more difficult due to a lack of basic utilties. 
+Producer and consumer are based on centos8 image. Image totals to around 400MB vs Python image is over 900MB.
 
 ## Logs
 ```bash
