@@ -15,9 +15,9 @@ docker-compose up -d
 ```
 3. Validate
 Three containers should now be running
-  docker-rabbitmq-processor_rabbitmq_1
-  docker-rabbitmq-processor_producer_1
-  docker-rabbitmq-processor_consumer_1
+  - docker-rabbitmq-processor_rabbitmq_1
+  - docker-rabbitmq-processor_producer_1
+  - docker-rabbitmq-processor_consumer_1
 ```bash
 docker container ls | grep docker-rabbitmq
 ```
